@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валерия Пономарёва</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        .honors a {
+            font-size: 24px; /* Увеличиваем размер шрифта */
+            font-weight: bold; /* Делаем текст жирным */
+            text-decoration: none; /* Убираем подчеркивание */
+            color: #000; /* Цвет текста */
+            margin-top: 20px;
+            display: block; /* Делаем ссылку блочным элементом для margin */
+            margin-bottom: 10px; /* Добавляем отступ снизу */
+        }
+        .honors a:hover {
+            color: #007BFF; /* Цвет при наведении */
+        }
+        .honors {
+            display: flex; /* Используем flexbox для размещения элементов в ряд */
+            flex-wrap: wrap; /* Разрешаем перенос на новую строку */
+            gap: 30px; /* Добавьте отступ между элементами */
+            justify-content: center; /* Центрируем по горизонтали */
+            margin-top: 30px; /* Отступ сверху */
+        }
+        .honors img {
+            max-width: 600px; /* Увеличиваем максимальную ширину в 2 раза */
+            max-height: 400px; /* Увеличиваем максимальную высоту в 2 раза */
+            display: block; /* Блочный элемент */
+            margin: 0 auto; /* Выравнивание по центру */
+        }
+        .grades-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Центрируем изображения по горизонтали */
+            gap: 20px;
+        }
+        .grades-container img{
+            max-width: 500px; /* Увеличиваем максимальную ширину в 2 раза */
+            max-height: 400px; /* Увеличиваем максимальную высоту в 2 раза */
+        }
+        .grades-container h1 { font-size: 48px; }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__inner">
+                <a href="mailto:vp619756@mail.ru" target="_blank" class="header__mail">
+                    <img src="./img/icons/logo.svg" alt="logo">
+                    <h1>vp619756@mail.ru</h1>
+                </a>
+                <nav class="header__menu">
+                    <ul class="menu__list">
+                        <li>
+                            <a href="https://t.me/fuckingmarceline" target="_blank" class="menu__link">
+                                <img src="./img/icons/telegram.png" alt="телеграмм ссылка">
+                                <span>telegram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="grades-container">
+            <img src="img/pr/photo_5326052694978326384_y.jpg" alt="фото меня">
+            <img src="img/pr/photo_5326052694978326389_y.jpg" alt="фото меня">
+            <img src="img/pr/photo_5326052694978326391_y.jpg" alt="фото меня">
+            <img src="img/pr/photo_5326052694978326392_y.jpg" alt="фото меня">
+            <img src="img/pr/photo_5326052694978326393_y.jpg" alt="фото меня">
+            <img src="img/pr/photo_5326052694978326385_y.jpg" alt="фото меня">
+            <img src="img/pr/photo_5326052694978326387_y.jpg" alt="фото меня">
+            <img src="img/pr/photo_5326052694978326388_y.jpg" alt="фото меня">
+        </div>
+    </div>
+</body>
+
+</html>

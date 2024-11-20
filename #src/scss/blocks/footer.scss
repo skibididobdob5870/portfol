@@ -1,0 +1,61 @@
+.footer {
+	@include ui-space(top, 25);
+	@include ui-space(bottom, 15);
+
+	h1 {
+		text-align: center;
+	}
+
+	&__contact {
+		@include ui-space(top, 20);
+
+		width: 100%;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+.contact {
+	&__description {
+		flex: 0 0 50%;
+
+		font-size: 2.5rem;
+		font-weight: $medium-weight;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		// flex-wrap: wrap;
+		@include ui-space(left, -5);
+	}
+}
+.menu {
+	&__link {
+		@include ui-space(left, 5);
+		img {
+			width: 80px;
+			height: 80px;
+
+			max-width: 80px;
+			max-height: 80px;
+
+			padding: 10px;
+			border-radius: 35%;
+
+			transition: 0.3s linear;
+		}
+		&:hover {
+			.link__image {
+				background-color: $secondary-f-hover-color;
+			}
+		}
+		&:active {
+			.link__image {
+				background-color: $secondary-f-active-color;
+			}
+		}
+	}
+}

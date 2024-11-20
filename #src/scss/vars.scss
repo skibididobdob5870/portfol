@@ -1,0 +1,64 @@
+// z-index --------------------
+$ui-index-1: 1; //для наползающих элементов в потоке
+$ui-index-2: 2; //для наползающих элементов в потоке
+$ui-index-3: 3; //для масок
+$ui-index-4: 4; //для сайдбаров
+$ui-index-5: 5; //для модалок
+$ui-index-6: 6; //дял элементов, перекрывающих все
+
+// FONTS ----------------------
+// font-family
+$font-family: "DM Sans", system-ui;
+
+// font weight
+$medium-weight: 500;
+$bold-weight: 700;
+
+//font colors
+$primary-f-color: #000;
+$alt-f-color: #fff;
+$alt-f-hover-color: #fff;
+
+$secondary-f-color: #5fc286;
+$secondary-f-hover-color: #ff715b;
+$secondary-f-active-color: #fe4a49;
+
+$optional-f-color: #000;
+$optional-f-hover-color: #f1e2fe;
+$optional-f-active-color: #cf95ff;
+
+// bgc colors------------------------------
+$main-bgc-color: #fff;
+$secondary-bgc-color: #fff;
+$optional-bgc-color: #dfb7ff;
+
+// ui step --------------------------------
+$ui-step: 4px;
+
+@mixin ui-space($direction, $size) {
+	@if ($direction == top) {
+		margin-top: $ui-step * $size;
+	}
+
+	@if ($direction == bottom) {
+		margin-bottom: $ui-step * $size;
+	}
+
+	@if ($direction == left) {
+		margin-left: $ui-step * $size;
+	}
+
+	@if ($direction == right) {
+		margin-right: $ui-step * $size;
+	}
+	@if ($direction == all) {
+		margin: $ui-step * $size;
+	}
+}
+// .element {
+// 	// это отступ в 8 пикселей сверзу
+// @include ui-space(top, 2);
+
+// 	// это 40 px (миксин-множитель)
+// height: $ui-step * 10;
+// }

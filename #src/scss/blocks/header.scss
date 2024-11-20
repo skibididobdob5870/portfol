@@ -1,0 +1,86 @@
+.header {
+	width: 100%;
+
+	margin: 1rem 0;
+	padding: 0 3rem;
+
+	&__inner {
+		width: 100%;
+		height: 70px;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__mail {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		img {
+			display: block;
+			max-width: 100%;
+		}
+		
+		h1 {
+			@include ui-space(left, 4);
+			transition: 0.25s linear;
+		}
+		&:hover h1 {
+			h1 {
+				color: $secondary-f-hover-color;
+			}
+		}
+		&:hover h1 {
+			color: $secondary-f-active-color;
+		}
+	}
+
+	&__menu {
+		flex-wrap: wrap;
+	}
+}
+.menu {
+	&__list {
+		display: flex;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+
+		font-size: 1.33rem;
+		text-transform: capitalize;
+		font-weight: $bold-weight;
+		line-height: 2.6;
+		letter-spacing: 0.1em;
+		color: $primary-f-color;
+
+		transition: 0.25s linear;
+		&:hover {
+			color: $secondary-f-hover-color;
+		}
+		&:active {
+			color: $secondary-f-active-color;
+		}
+
+		span {
+			@include ui-space(left, 5);
+		}
+
+		img {
+			width: 30px;
+			height: 30px;
+			object-fit: contain;
+			overflow: hidden;
+		}
+	}
+}
+
+.header__menu {
+	@include ui-space(right, -15);
+}
+.menu__list li {
+	@include ui-space(right, 15);
+}
